@@ -17,18 +17,18 @@ const Header: FC = () => {
           <nav className='header__nav'>
             <ul className='header__list'>
               {HEADER_LINKS.map((item, i) => {
-                let title = item.title.toLocaleLowerCase();
+                let id = item.id;
                 return (
                   <li key={i}>
                     <ScrollIntoView
                       smooth={true}
-                      selector={`#${title}`}
-                      onClick={() => handleLinkClick(title)}
+                      selector={`${id}`}
+                      onClick={() => handleLinkClick(id)}
                       className={`header__link  ${
-                        activeLink === title ? 'active' : ''
+                        activeLink === id ? 'active' : ''
                       }`}
                     >
-                      <a href={`#${title}`}>{item.title}</a>
+                      <a href={`${id}`}>{item.title}</a>
                     </ScrollIntoView>
                   </li>
                 );
