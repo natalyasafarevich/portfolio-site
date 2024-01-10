@@ -1,5 +1,6 @@
 type HeaderLinksProps = {
   title: string;
+  bg?: string;
 };
 export const HEADER_LINKS: Array<HeaderLinksProps> = [
   {
@@ -11,6 +12,7 @@ export const HEADER_LINKS: Array<HeaderLinksProps> = [
   {
     title: 'Service',
   },
+
   {
     title: 'Resume',
   },

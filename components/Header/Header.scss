@@ -1,3 +1,42 @@
-.active {
-  color: red;
+.header {
+  // .header__wrap
+
+  &__wrap {
+    padding: 5px 5px;
+    max-width: 1298px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50px;
+    background: #171717;
+    backdrop-filter: blur(7.5px);
+  }
+
+  // .header__nav
+
+  &__nav {
+  }
+
+  // .header__list
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    // margin: 0 -10px;
+  }
+  &__link {
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 60px;
+    letter-spacing: -0.3px;
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    &.active {
+      background: #fd853a;
+    }
+    a {
+      color: #fff;
+      padding: 25px 40px;
+    }
+  }
 }
