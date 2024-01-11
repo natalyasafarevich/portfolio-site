@@ -10,6 +10,9 @@ body {
   position: relative;
   font-family: "Lufga", sans-serif;
 }
+.highlighting-color {
+  color: #fd853a;
+}
 
 body,
 div,

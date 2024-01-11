@@ -1,0 +1,63 @@
+.project {
+  // .project__wrap
+
+  &__wrap {
+    padding: 100px 0;
+    background: center/cover no-repeat url(/pr-bg.svg);
+    color: azure;
+  }
+
+  // .project__info
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .project__title
+
+  &__title {
+    color: #fcfcfd;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.72px;
+  }
+
+  // .project__desc
+
+  &__desc {
+    color: var(--white, #fff);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    max-width: 567px;
+    width: 100%;
+  }
+
+  // .project__row
+
+  &__row {
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .project__card
+
+  &__card {
+    max-width: 416px;
+    width: 100%;
+    &:nth-child(3) {
+      .project-card__item {
+        width: 150px;
+      }
+    }
+    &:nth-child(even) {
+      .project-card__main {
+        background: #fff;
+      }
+    }
+  }
+}

@@ -17,8 +17,8 @@ const Preview: FC = () => {
           </div>
           <div className='preview__row'>
             <p className={`preview__quote ${isShown ? 'active' : ''}`}>
-              Jenny’s Exceptional product design ensure our website’s
-              success. Highly Recommended
+              Jennys Exceptional product design ensure our websites
+              success.Highly Recommended
             </p>
             <div
               className='preview__info'
@@ -35,7 +35,7 @@ const Preview: FC = () => {
               </div>
             </div>
             <div className={`preview__desc ${isShown ? 'active' : ''}`}>
-              10 Years
+              2 Years
               <br /> <span>Experince</span>
             </div>
           </div>
