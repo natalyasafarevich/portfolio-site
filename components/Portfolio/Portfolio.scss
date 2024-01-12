@@ -1,0 +1,24 @@
+.portfolio {
+  // .portfolio__wrap
+
+  &__wrap {
+    padding: 97px 0;
+  }
+
+  // .portfolio__title
+
+  &__title {
+    margin-bottom: 48px;
+    color: #344054;
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: -0.96px;
+    max-width: 643px;
+    width: 100%;
+  }
+
+  // .portfolio__slider
+
+  &__slider {
+  }
+}

@@ -3,6 +3,11 @@
   src: url("/fonts/LufgaRegular.ttf") format("truetype");
   font-weight: normal; /* Нормальный вес шрифта */
 }
+@font-face {
+  font-family: "LufgaExtraBold";
+  src: url("/fonts/LufgaExtraBold.ttf") format("truetype");
+  font-weight: 900; /* Нормальный вес шрифта */
+}
 
 * {
   transition: all 0.3s ease;

@@ -67,3 +67,46 @@ export const PROJECT_CARDS: Array<CardProps> = [
     ],
   },
 ];
+export type CardPProps = {
+  title: string;
+  desc: string;
+  src: string;
+};
+
+export const PORTFOLIO_CARDS: Array<CardPProps> = [
+  {
+    title: `Libroverse`,
+    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
+     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    src: '/tab1.svg',
+  },
+  {
+    title: `Calathea`,
+    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
+     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    src: '/tab2.svg',
+  },
+  {
+    title: `Calathea`,
+    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
+     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    src: '/test-bg.svg',
+  },
+  {
+    title: `Calathea`,
+    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
+     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    src: '/test-bg.svg',
+  },
+  {
+    title: `Calathea`,
+    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
+     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    src: '/test-bg.svg',
+  },
+];
