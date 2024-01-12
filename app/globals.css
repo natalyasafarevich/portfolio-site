@@ -3,6 +3,7 @@
   src: url("/fonts/LufgaRegular.ttf") format("truetype");
   font-weight: normal; /* Нормальный вес шрифта */
 }
+
 * {
   transition: all 0.3s ease;
 }

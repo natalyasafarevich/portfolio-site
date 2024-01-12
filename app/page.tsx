@@ -4,6 +4,7 @@ import Header from '@/components/Header/Header';
 import Preview from '@/components/Preview/Preview';
 import Project from '@/components/Project/Skills';
 import Experience from '@/components/Experince/Experience';
+import Reasons from '@/components/Reasons/Reasons';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Preview />
       <Project />
       <Experience />
+      <Reasons />
     </main>
   );
 }

@@ -1,0 +1,78 @@
+.reasons {
+  // .reasons__wrap
+
+  &__wrap {
+    padding: 166px 0;
+    border-radius: 50px;
+    background: #f2f4f7;
+  }
+
+  // .reasons__title
+
+  &__title {
+    margin-bottom: 47px;
+    color: #344054;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.96px;
+  }
+
+  // .reasons__desc
+
+  &__desc {
+    max-width: 444px;
+    width: 100%;
+    color: #98a2b3;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    margin-bottom: 47px;
+  }
+
+  // .reasons__row
+
+  &__row {
+    display: flex;
+  }
+
+  // .reasons__info
+
+  &__info {
+    width: 50%;
+    color: #1d2939;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -0.54px;
+    margin-bottom: 47px;
+    span {
+      display: block;
+      color: #667085;
+      font-family: Lufga;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: -0.3px;
+      margin-top: 10px;
+    }
+  }
+
+  // .reasons__button
+
+  &__button {
+    border-radius: 32px;
+    border: 1px solid #151515;
+    color: #151515;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 33px 10px;
+    width: 233px;
+    letter-spacing: -0.48px;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid var(--white, #fff);
+      color: var(--white, #fff);
+      background: #10110e;
+    }
+  }
+}
