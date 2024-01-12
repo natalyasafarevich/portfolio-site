@@ -4,6 +4,11 @@
   font-weight: normal; /* Нормальный вес шрифта */
 }
 @font-face {
+  font-family: "LufgaMeduim";
+  src: url("/fonts/LufgaMedium.ttf") format("truetype");
+  font-weight: 600; /* Нормальный вес шрифта */
+}
+@font-face {
   font-family: "LufgaExtraBold";
   src: url("/fonts/LufgaExtraBold.ttf") format("truetype");
   font-weight: 900; /* Нормальный вес шрифта */
