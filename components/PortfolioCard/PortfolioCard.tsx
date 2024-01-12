@@ -11,7 +11,7 @@ const PortfolioCard: FC<PortfolioCardProps> = ({card}) => {
   return (
     <Link
       to='/'
-      className='portfolio-card'
+      className={`portfolio-card ${isShown ? 'show' : ''}`}
       onMouseEnter={() => setIsShown(true)}
       onMouseLeave={() => setIsShown(false)}
     >
@@ -20,13 +20,9 @@ const PortfolioCard: FC<PortfolioCardProps> = ({card}) => {
         style={{background: `center/cover no-repeat url(${card.src})`}}
       >
         <span className='portfolio-card__button'></span>
-        <span className={`portfolio-card__info ${isShown ? 'show' : ''}`}>
-          <span className={`portfolio-card__title ${isShown ? 'show' : ''}`}>
-            {card.title}
-          </span>
-          <span className={`portfolio-card__desc ${isShown ? 'show' : ''}`}>
-            {card.desc}
-          </span>
+        <span className={`portfolio-card__info `}>
+          <span className={`portfolio-card__title`}>{card.title}</span>
+          <span className={`portfolio-card__desc`}>{card.desc}</span>
         </span>
       </span>
     </Link>

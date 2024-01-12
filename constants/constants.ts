@@ -110,3 +110,14 @@ export const PORTFOLIO_CARDS: Array<CardPProps> = [
     src: '/test-bg.svg',
   },
 ];
+
+type LabelProps = {
+  name: string;
+};
+export const LABELS_PORTFOLIO: Array<LabelProps> = [
+  {name: 'Landing Page'},
+  {name: 'Product Design'},
+  {name: 'Animation'},
+  {name: 'Glassmorphism'},
+  {name: 'Cards'},
+];

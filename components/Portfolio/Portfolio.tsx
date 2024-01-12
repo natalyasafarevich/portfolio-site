@@ -5,6 +5,8 @@ import './Portfolio.scss';
 // import Slider from 'react-slick';
 
 import CommonSlides from '../CommonSlides/CommonSlides';
+import {LABELS_PORTFOLIO} from '@/constants/constants';
+import RunningText from '../RunningText/RunningText';
 
 const Portfolio: FC = () => {
   return (
@@ -18,8 +20,16 @@ const Portfolio: FC = () => {
           <div className='portfolio__slider'>
             <CommonSlides />
           </div>
+          <div className='portfolio__row'>
+            {LABELS_PORTFOLIO.map((label, i) => (
+              <div key={i} className='portfolio__label'>
+                {label.name}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+      <RunningText />
     </div>
   );
 };

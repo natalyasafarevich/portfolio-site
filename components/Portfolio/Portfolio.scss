@@ -18,7 +18,20 @@
   }
 
   // .portfolio__slider
-
+  &__row {
+    display: flex;
+    justify-content: center;
+    margin: 47px -7px 0;
+  }
+  &__label {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 24px;
+    background: #f2f4f7;
+    margin: 0 7px;
+    padding: 15px 32px;
+  }
   &__slider {
   }
 }

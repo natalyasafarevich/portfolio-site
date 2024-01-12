@@ -4,6 +4,27 @@
   * {
     display: block;
   }
+  &.show {
+    .portfolio-card__info {
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(12.5px);
+    }
+    .portfolio-card__title {
+      top: 0px;
+    }
+    .portfolio-card__desc {
+      opacity: 1;
+    }
+    &:hover {
+      .portfolio-card__button {
+        border: 2px solid #fd853a;
+        background:
+          center/contain no-repeat url("/light-arr.svg"),
+          #fd853a;
+        background-size: 60%;
+      }
+    }
+  }
   &__wrap {
     border-radius: 20px;
     overflow: hidden;
@@ -32,13 +53,13 @@
   // .portfolio-card__button
 
   &__button {
-    &:hover {
-      border: 2px solid #fd853a;
-      background:
-        center/contain no-repeat url("/light-arr.svg"),
-        #fd853a;
-      background-size: 60%;
-    }
+    // &:hover {
+    //   border: 2px solid #fd853a;
+    //   background:
+    //     center/contain no-repeat url("/light-arr.svg"),
+    //     #fd853a;
+    //   background-size: 60%;
+    // }
     margin-left: auto;
     display: block;
     cursor: pointer;
@@ -54,10 +75,6 @@
   // .portfolio-card__info
 
   &__info {
-    &.show {
-      background: rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(12.5px);
-    }
     border-radius: 24px;
     padding: 20px;
     margin-top: 216px;
@@ -67,9 +84,6 @@
   // .portfolio-card__title
 
   &__title {
-    &.show {
-      top: 0px;
-    }
     position: relative;
     top: 78px;
     color: #fffaf5;
@@ -85,7 +99,6 @@
 
   &__desc {
     &.show {
-      opacity: 1;
     }
     color: #ffead5;
     opacity: 0;

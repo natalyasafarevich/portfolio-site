@@ -6,7 +6,30 @@
   }
 
   // .slider__card
-
-  &__card {
+  .slick-dots {
+    margin-top: 47px;
+    bottom: auto;
+    position: relative;
+    li button {
+      background: wheat;
+      width: 15.081px;
+      height: 15.081px;
+      border-radius: 20.736px;
+      background: var(--gray-200, #e4e7ec);
+      &::before {
+        content: none;
+      }
+    }
+    li {
+      width: auto;
+      height: auto;
+    }
+    .slick-active button {
+      display: block;
+      border-radius: 20.736px;
+      background: #fd853a;
+      width: 60.324px;
+      height: 15.081px;
+    }
   }
 }
