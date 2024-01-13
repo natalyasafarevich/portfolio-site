@@ -81,33 +81,79 @@ export const PORTFOLIO_CARDS: Array<CardPProps> = [
      amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
     src: '/tab1.svg',
   },
+  // {
+  //   title: `Calathea`,
+  //   desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  //    Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit
+  //    amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+  //   src: '/tab2.svg',
+  // },
   {
-    title: `Calathea`,
+    title: `We smart`,
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
      Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
      amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
-    src: '/tab2.svg',
+    src: '/tab3.svg',
   },
   {
-    title: `Calathea`,
+    title: `Eat Wise`,
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
      Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
      amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
-    src: '/test-bg.svg',
+    src: '/tab4.svg',
+  },
+
+  {
+    title: `Dashboard`,
+    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
+     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    src: '/tab5.svg',
+  },
+
+  {
+    title: `Toolkeeper app `,
+    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
+     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    src: '/tab7.svg',
   },
   {
-    title: `Calathea`,
+    title: `Prime Pay`,
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
      Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
      amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
-    src: '/test-bg.svg',
+    src: '/tab6.svg',
+  },
+
+  {
+    title: `Toolkeeper  `,
+    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
+     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    src: '/tab11.svg',
   },
   {
-    title: `Calathea`,
+    title: `To-do app`,
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
      Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
      amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
-    src: '/test-bg.svg',
+    src: '/tab9.svg',
+  },
+  {
+    title: `Statistic map`,
+    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
+     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    src: '/tab8.svg',
+  },
+
+  {
+    title: `Movies`,
+    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
+     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    src: '/tab10.svg',
   },
 ];
 
