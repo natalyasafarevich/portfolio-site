@@ -17,6 +17,10 @@
 * {
   transition: all 0.3s ease;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   position: relative;
   font-family: "Lufga", sans-serif;
@@ -129,7 +133,24 @@ button {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0px 40px;
+  position: relative;
 }
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+  .wrap {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
 }

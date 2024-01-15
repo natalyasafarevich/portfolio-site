@@ -6,13 +6,17 @@ import {HEADER_LINKS} from '@/constants/constants';
 
 const Header: FC = () => {
   const [activeLink, setActiveLink] = useState('');
-
+  const [isOpen, setIsOpen] = useState(false);
   const handleLinkClick = (id: any) => {
     setActiveLink(id);
   };
   return (
     <header className='header'>
       <div className='wrap'>
+        <button
+          className={`header__mobile ${isOpen ? 'open' : ''}`}
+          onClick={() => setIsOpen(!isOpen)}
+        ></button>
         <div className='header__wrap'>
           <nav className='header__nav'>
             <ul className='header__list'>
@@ -23,7 +27,10 @@ const Header: FC = () => {
                     <ScrollIntoView
                       smooth={true}
                       selector={`${id}`}
-                      onClick={() => handleLinkClick(id)}
+                      onClick={() => {
+                        handleLinkClick(id);
+                        setIsOpen(!isOpen);
+                      }}
                       className={`header__link  ${
                         activeLink === id ? 'active' : ''
                       }`}

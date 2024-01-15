@@ -11,7 +11,6 @@ const CommonSlides: FC = () => {
   const settings = {
     className: 'slider-card',
     dots: true,
-    // centerPadding: '60px',
     infinite: true,
     speed: 500,
     slidesToShow: 2,
@@ -26,7 +25,6 @@ const CommonSlides: FC = () => {
           {PORTFOLIO_CARDS.map((card, i) => {
             return (
               <div className='slider__card' key={i}>
-                {' '}
                 <PortfolioCard card={card} />
               </div>
             );

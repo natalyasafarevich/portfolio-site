@@ -47,6 +47,9 @@
   // .project__card
 
   &__card {
+    &_skeleton {
+      background-color: #fff;
+    }
     max-width: 416px;
     width: 100%;
     &:nth-child(3) {

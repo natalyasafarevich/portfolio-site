@@ -1,9 +1,15 @@
+'use client';
 import {FC} from 'react';
 import './Experience.scss';
+import {useInView} from 'react-intersection-observer';
 
 const Experience: FC = () => {
+  const {ref, inView, entry} = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   return (
-    <div className='experience'>
+    <div className='experience' ref={ref}>
       <div className='wrap'>
         <div className='experience__wrap'>
           <p className='experience__title'>
@@ -20,7 +26,7 @@ const Experience: FC = () => {
               </p>
             </div>
 
-            <div className='experience__icon'></div>
+            {inView && <div className='experience__icon'></div>}
             <div className='experience__info'>
               <p className='experience__name'>
                 Experince Designer

@@ -2,10 +2,15 @@
 import {FC} from 'react';
 import './Contact.scss';
 import {Link} from 'react-scroll';
+import {useInView} from 'react-intersection-observer';
 
 const Contact: FC = () => {
+  const {ref, inView, entry} = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   return (
-    <div className='contact'>
+    <div className='contact' ref={ref}>
       <div className='wrap'>
         <div className='contact__wrap'>
           <p className='contact__title'>
@@ -22,28 +27,30 @@ const Contact: FC = () => {
             <span>phone</span>
             +48 451 251 357
           </a>
-          <div className='contact__box'>
-            <p className='contact__label'>
-              <span>socials</span>
-              <div className='contact__row'>
-                <a
-                  target='_blank'
-                  href='https://t.me/mentis_astra'
-                  className='contact__icon contact__icon_tg'
-                ></a>
-                <a
-                  target='_blank'
-                  href='https://www.linkedin.com/in/natalya-safarevich/'
-                  className='contact__icon contact__icon_ln'
-                ></a>
-                <a
-                  target='_blank'
-                  href='https://github.com/natalyasafarevich'
-                  className='contact__icon contact__icon_git'
-                ></a>
+          {inView && (
+            <div className='contact__box'>
+              <div className='contact__label'>
+                <span>socials</span>
+                <div className='contact__row'>
+                  <a
+                    target='_blank'
+                    href='https://t.me/mentis_astra'
+                    className='contact__icon contact__icon_tg'
+                  ></a>
+                  <a
+                    target='_blank'
+                    href='https://www.linkedin.com/in/natalya-safarevich/'
+                    className='contact__icon contact__icon_ln'
+                  ></a>
+                  <a
+                    target='_blank'
+                    href='https://github.com/natalyasafarevich'
+                    className='contact__icon contact__icon_git'
+                  ></a>
+                </div>
               </div>
-            </p>
-          </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

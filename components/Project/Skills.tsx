@@ -1,7 +1,9 @@
+'use client';
 import {FC} from 'react';
 import './Skills.scss';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import {PROJECT_CARDS} from '@/constants/constants';
+import {useInView} from 'react-intersection-observer';
 
 const Skills: FC = () => {
   return (

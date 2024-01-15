@@ -5,6 +5,7 @@ import {Link} from 'react-scroll';
 
 const Preview: FC = () => {
   const [isShown, setIsShown] = useState(false);
+
   return (
     <div className='preview' id='preview'>
       <div className='wrap'>
