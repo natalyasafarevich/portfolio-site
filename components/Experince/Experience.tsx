@@ -20,9 +20,25 @@ const Experience: FC = () => {
               <p className='experience__name'>
                 Cognizant, Mumbai
                 <span>Sep 2016- July 2020</span>
+                <span className='experience__name'>
+                  Experince Designer
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis lacus nunc, posuere in justo vulputate, bibendum
+                    sodales
+                  </span>
+                </span>
               </p>
               <p className='experience__name'>
                 Sugee Pvt limited, Mumbai <span>Sep 2020- July 2023</span>
+                <span className='experience__name'>
+                  Experince Designer
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis lacus nunc, posuere in justo vulputate, bibendum
+                    sodales
+                  </span>
+                </span>
               </p>
             </div>
 

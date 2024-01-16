@@ -111,3 +111,33 @@
     letter-spacing: -0.24px;
   }
 }
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+  .portfolio-card__info {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(12.5px);
+    backdrop-filter: blur(12.5px);
+  }
+  .portfolio-card__title {
+    top: 0px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .portfolio-card__desc {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .portfolio-card__info {
+    margin-top: 60px;
+  }
+  .portfolio-card__title {
+    font-size: 35px;
+  }
+}

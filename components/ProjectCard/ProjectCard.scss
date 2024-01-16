@@ -95,3 +95,44 @@
 
   // .project-card__main
 }
+@media (max-width: 1399.98px) {
+  .project-card__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .project-card__title {
+    font-size: 20px;
+  }
+  .project-card__item {
+    height: 62px;
+  }
+}
+@media (max-width: 991.98px) {
+  .project-card__wrap {
+    padding-top: 20px;
+  }
+  .project-card__title {
+    padding-bottom: 20px;
+  }
+  .project-card__main {
+    height: 78%;
+  }
+  .project-card__backing {
+    margin: 30px auto 0;
+    height: 284px;
+  }
+  .project-card__item {
+    margin: 0 0 10px;
+  }
+  .project__card:nth-child(3) .project-card__item {
+    width: 130px;
+  }
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+}

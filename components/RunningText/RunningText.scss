@@ -45,3 +45,16 @@
     letter-spacing: -0.72px;
   }
 }
+
+@media (max-width: 575.98px) {
+  .running-text {
+    border-radius: 0;
+    height: 80px;
+  }
+  .running-text__wrap {
+    top: 7px;
+  }
+  .running-text__wrap span {
+    font-size: 38px;
+  }
+}
