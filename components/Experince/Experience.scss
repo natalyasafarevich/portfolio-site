@@ -1,0 +1,73 @@
+.experience {
+  // .experience__wrap
+
+  &__wrap {
+    padding: 85px 0 155px;
+  }
+
+  // .experience__title
+
+  &__title {
+    text-align: center;
+    color: #344054;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.96px;
+    margin-bottom: 85px;
+  }
+
+  // .experience__row
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -5px;
+    align-items: stretch;
+  }
+
+  // .experience__info
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 495px;
+    width: 100%;
+    margin: 0 5px;
+  }
+
+  // .experience__name
+
+  &__name {
+    color: #344054;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.6px;
+    span {
+      display: block;
+      color: #98a2b3;
+      font-size: 24px;
+      margin-top: 14px;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: -0.36px;
+    }
+    &:not(:last-of-type) {
+      margin-bottom: 100px;
+    }
+  }
+
+  // .experience__icon
+
+  &__icon {
+    width: 50px;
+    background: center/contain no-repeat url(/expirience-icon.svg);
+    margin: 0 5px;
+  }
+}
+.wrap {
+}
+.highlighting-color {
+}

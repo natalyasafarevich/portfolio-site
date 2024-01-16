@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Lufga";
+  src: url("/fonts/LufgaRegular.ttf") format("truetype");
+  font-weight: normal; /* Нормальный вес шрифта */
+}
+@font-face {
+  font-family: "LufgaMeduim";
+  src: url("/fonts/LufgaMedium.ttf") format("truetype");
+  font-weight: 600; /* Нормальный вес шрифта */
+}
+@font-face {
+  font-family: "LufgaExtraBold";
+  src: url("/fonts/LufgaExtraBold.ttf") format("truetype");
+  font-weight: 900; /* Нормальный вес шрифта */
+}
+
+* {
+  transition: all 0.3s ease;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  font-family: "Lufga", sans-serif;
+}
+.highlighting-color {
+  color: #fd853a;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+nav,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+em,
+strong,
+th {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-size: 100%;
+  /*to enable resizing for IE*/
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 40px;
+  position: relative;
+}
+html {
+  scroll-behavior: smooth;
+}
+html.hide-scroll {
+  overflow-y: hidden;
+}
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+  .wrap {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .wrap {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+}

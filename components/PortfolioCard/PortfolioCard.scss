@@ -1,0 +1,113 @@
+.portfolio-card {
+  margin: 0 24px;
+  cursor: pointer;
+  * {
+    display: block;
+  }
+  .loading {
+  }
+  &.show {
+    .portfolio-card__info {
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(12.5px);
+    }
+    .portfolio-card__title {
+      top: 0px;
+    }
+    .portfolio-card__desc {
+      opacity: 1;
+    }
+    &:hover {
+      .portfolio-card__button {
+        border: 2px solid #fd853a;
+        background:
+          center/contain no-repeat url("/light-arr.svg"),
+          #fd853a;
+        background-size: 60%;
+      }
+    }
+  }
+  &__wrap {
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+
+    // &::before {
+    //   content: "";
+    //   bottom: 0;
+    //   display: block;
+    //   width: 100%;
+    //   height: 50%;
+    //   position: absolute;
+    //   background: linear-gradient(
+    //       207deg,
+    //       rgba(0, 0, 0, 0) 47.41%,
+    //       rgba(0, 0, 0, 0.36) 76.39%,
+    //       rgba(0, 0, 0, 0.5) 89.23%
+    //     ),
+    //     #fff;
+    //   opacity: 0.5;
+    // }
+  }
+
+  // .portfolio-card__button
+
+  &__button {
+    // &:hover {
+    //   border: 2px solid #fd853a;
+    //   background:
+    //     center/contain no-repeat url("/light-arr.svg"),
+    //     #fd853a;
+    //   background-size: 60%;
+    // }
+    margin-left: auto;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 60px;
+    border: 1px solid #fd853a;
+    background: center/contain no-repeat url(/light.svg);
+    background-size: 60%;
+  }
+
+  // .portfolio-card__info
+
+  &__info {
+    border-radius: 24px;
+    padding: 20px;
+    margin-top: 216px;
+    position: relative;
+  }
+
+  // .portfolio-card__title
+
+  &__title {
+    position: relative;
+    top: 78px;
+    color: #fffaf5;
+    font-family: "LufgaExtraBold";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.05px;
+  }
+
+  // .portfolio-card__desc
+
+  &__desc {
+    &.show {
+    }
+    color: #ffead5;
+    opacity: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.24px;
+  }
+}

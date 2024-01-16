@@ -1,0 +1,129 @@
+.header {
+  // .header__wrap
+
+  &__wrap {
+    padding: 5px 5px;
+    max-width: 1298px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50px;
+    background: #171717;
+    backdrop-filter: blur(7.5px);
+  }
+
+  // .header__nav
+
+  &__nav {
+  }
+
+  // .header__list
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    // margin: 0 -10px;
+  }
+  &__link {
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 60px;
+    letter-spacing: -0.3px;
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    &.active {
+      background: #fd853a;
+    }
+    a {
+      color: #fff;
+      padding: 25px 40px;
+    }
+  }
+  &__top {
+    display: none;
+  }
+  &__mobile {
+    display: none;
+    &.open {
+      background-position-x: 100%;
+    }
+    transition: none;
+    cursor: pointer;
+    margin-left: auto;
+    width: 83px;
+    height: 83px;
+    background: no-repeat url(/mobile-header-buttons.svg);
+  }
+}
+@media (max-width: 991.98px) {
+  .header {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .header {
+    transition: none;
+    &.open {
+      position: absolute;
+      width: 100%;
+      z-index: 99999;
+      height: 100vh;
+      background: #171717;
+    }
+
+    .wrap {
+      padding: 0;
+    }
+    &__top {
+      transition: none;
+      display: flex;
+      &.open {
+      }
+      &.open + .header__wrap {
+        display: block;
+      }
+    }
+    &__mobile {
+      display: block;
+    }
+  }
+
+  .header__wrap {
+    display: none;
+    z-index: 9;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+    padding: 25px 20px;
+  }
+  .header__list {
+    flex-direction: column;
+  }
+  .header__link {
+    &.active {
+      background-color: transparent;
+      a {
+        color: #fd853a;
+      }
+    }
+    a {
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header__mobile {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+  }
+  .header__wrap {
+    padding: 25px 0;
+  }
+  .header__link a {
+    text-align: center;
+    padding: 20px 10px;
+  }
+}

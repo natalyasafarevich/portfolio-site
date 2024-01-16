@@ -1,0 +1,154 @@
+.footer {
+  // .footer__wrap
+
+  &__wrap {
+    border-radius: 24px 24px 0px 0px;
+    background: #272727;
+    color: #fcfcfd;
+    padding: 25px 0;
+  }
+
+  // .footer__title
+
+  &__title {
+    padding-bottom: 55px;
+    border-bottom: 2px solid #475467;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-size: 64px;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.96px;
+    }
+  }
+
+  // .footer__button
+
+  &__button {
+    cursor: pointer;
+    color: var(--white, #fff);
+    font-size: 25.692px;
+    font-weight: 500;
+    letter-spacing: -0.385px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    background: #fd853a;
+    padding: 10px 20px;
+    &::after {
+      content: "";
+      display: inline-block;
+
+      width: 42px;
+      height: 42px;
+      min-width: 42px;
+      background: no-repeat url(/up-right.svg);
+    }
+  }
+
+  // .footer__row
+
+  &__row {
+    padding: 55px 0;
+    border-bottom: 2px solid #475467;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px;
+  }
+
+  // .footer__info
+
+  &__info {
+    margin: 0 10px;
+    max-width: 635px;
+    width: 100%;
+  }
+
+  // .footer__desc
+
+  &__desc {
+    color: #fcfcfd;
+    font-family: Lufga;
+    margin-bottom: 34px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.3px;
+  }
+
+  // .footer__box
+
+  &__box {
+    margin: 0 -5px;
+    display: flex;
+  }
+
+  // .footer__icon
+
+  &__icon {
+    margin: 0 5px;
+    width: 24px;
+    height: 24px;
+    background: no-repeat url(/social-icons-footer.svg);
+    background-size: cover;
+
+    &_tg {
+      background-position-x: 100%;
+    }
+
+    // .footer__icon_ln
+
+    &_git {
+      background-position-x: 50%;
+    }
+  }
+  &__navig {
+    margin: 0 10px;
+  }
+  // .footer__label
+
+  &__label {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    margin-bottom: 28px;
+  }
+  &__link {
+    a {
+      &:hover {
+        color: #fd853a;
+      }
+      color: #fcfcfd;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: -0.24px;
+    }
+    margin-bottom: 20px;
+  }
+
+  // .footer__contact
+
+  &__contact {
+    margin: 0 10px;
+  }
+
+  // .footer__item
+
+  &__item {
+    margin-bottom: 20px;
+    color: #fcfcfd;
+    &:hover {
+      color: #fd853a;
+    }
+  }
+  &__right {
+    padding: 55px 0 25px;
+    color: var(--white, #fff);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+  }
+}
