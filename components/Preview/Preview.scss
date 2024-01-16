@@ -216,6 +216,7 @@
     &.active {
       top: -50%;
     }
+    white-space: nowrap;
     position: relative;
     top: 0;
     color: #171717;
@@ -235,5 +236,113 @@
       line-height: 100%; /* 20px */
       letter-spacing: -0.3px;
     }
+  }
+}
+@media (max-width: 1399.98px) {
+  .preview__title::after {
+    content: none;
+  }
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+  .preview__title {
+    font-size: 50px;
+  }
+  .preview__info {
+    &::before {
+      background: bottom/contain no-repeat url(/cricle.svg);
+      transform: scale(1.6);
+      bottom: 30%;
+      position: absolute;
+    }
+    background: transparent;
+  }
+  .preview__quote {
+    font-size: 14px;
+  }
+  .preview__info::after {
+    background: bottom/contain no-repeat url(/i.png);
+  }
+  .preview__box {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .preview__info::after {
+    height: 90%;
+    left: 2%;
+  }
+  .preview__quote {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 99999;
+  }
+  .preview__info {
+    &::before {
+      background: bottom/contain no-repeat url(/cricle.svg);
+      transform: scale(0.9);
+      bottom: -5%;
+      left: 0;
+      position: absolute;
+    }
+  }
+  .preview__desc {
+    text-align: right;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 99999;
+    right: 0;
+  }
+  .preview__row {
+    position: relative;
+  }
+  .preview__wrap {
+    padding-top: 20px;
+  }
+  .preview__info {
+    height: 476px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .preview__label {
+    transform: scale(0.7);
+  }
+  .preview__quote {
+    display: none;
+  }
+  .preview__desc {
+    height: 51%;
+    right: 22px;
+    font-size: 28px;
+    span {
+      font-size: 13px;
+    }
+  }
+  .preview__info::before {
+    transform: scale(1.1);
+    bottom: 0;
+  }
+  .preview__info::after {
+    bottom: -5%;
+  }
+  .preview__box {
+    margin-bottom: 0;
+  }
+  .preview__title {
+    font-size: 35px;
+  }
+  .preview__info {
+    height: 438px;
   }
 }

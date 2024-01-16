@@ -147,7 +147,7 @@ html.hide-scroll {
 }
 @media (max-width: 991.98px) {
   .wrap {
-    padding: 15px;
+    padding: 0 15px;
   }
 }
 
@@ -155,6 +155,19 @@ html.hide-scroll {
   .wrap {
     padding: 0 15px;
   }
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
 }
 
 @media (max-width: 575.98px) {

@@ -55,14 +55,11 @@
     background: no-repeat url(/mobile-header-buttons.svg);
   }
 }
-
-@media (max-width: 1399.98px) {
-}
-@media (max-width: 1199.98px) {
-}
 @media (max-width: 991.98px) {
+  .header {
+    padding-top: 20px;
+  }
 }
-
 @media (max-width: 767.98px) {
   .header {
     transition: none;
@@ -117,6 +114,11 @@
 }
 
 @media (max-width: 575.98px) {
+  .header__mobile {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+  }
   .header__wrap {
     padding: 25px 0;
   }
