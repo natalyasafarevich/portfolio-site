@@ -135,6 +135,29 @@ button {
   padding: 0px 40px;
   position: relative;
 }
+::-webkit-scrollbar {
+  width: 10px;
+  background: #fafafa;
+  box-shadow:
+    -1px 0px 0px 0px #f0f0f0 inset,
+    1px 0px 0px 0px #e8e8e8 inset;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #c1c1c1;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+  background: #fafafa;
+  box-shadow:
+    -1px 0px 0px 0px #f0f0f0 inset,
+    1px 0px 0px 0px #e8e8e8 inset;
+}
+html::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #c1c1c1;
+}
 html {
   scroll-behavior: smooth;
 }
