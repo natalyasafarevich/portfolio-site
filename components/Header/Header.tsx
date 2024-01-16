@@ -1,5 +1,5 @@
 'use client';
-import {FC, useState} from 'react';
+import {FC, useEffect, useState} from 'react';
 import './Header.scss';
 import ScrollIntoView from 'react-scroll-into-view';
 import {HEADER_LINKS} from '@/constants/constants';
@@ -7,16 +7,28 @@ import {HEADER_LINKS} from '@/constants/constants';
 const Header: FC = () => {
   const [activeLink, setActiveLink] = useState('');
   const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.querySelector('html')?.classList.add('hide-scroll');
+    } else {
+      document.querySelector('html')?.classList.remove('hide-scroll');
+    }
+  }, [isOpen]);
   const handleLinkClick = (id: any) => {
     setActiveLink(id);
   };
+
   return (
-    <header className='header'>
+    <header className={`header ${isOpen ? 'open' : ''}`}>
       <div className='wrap'>
-        <button
-          className={`header__mobile ${isOpen ? 'open' : ''}`}
-          onClick={() => setIsOpen(!isOpen)}
-        ></button>
+        <div className={`header__top ${isOpen ? 'open' : ''}`}>
+          <button
+            className={`header__mobile ${isOpen ? 'open' : ''}`}
+            onClick={() => setIsOpen(!isOpen)}
+          ></button>
+        </div>
         <div className='header__wrap'>
           <nav className='header__nav'>
             <ul className='header__list'>
