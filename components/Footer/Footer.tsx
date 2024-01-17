@@ -16,7 +16,13 @@ const Footer: FC = () => {
         <div className='wrap'>
           <div className='footer__title'>
             <p>Lets Connect there</p>
-            <button className='footer__button'>Hire me</button>
+            <ScrollIntoView
+              smooth={true}
+              selector={`#contact`}
+              className={`footer__button`}
+            >
+              <a href={`#contact`}>Hire me</a>
+            </ScrollIntoView>
           </div>
           <div className='footer__row'>
             <div className='footer__info'>

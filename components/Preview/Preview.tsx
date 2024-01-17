@@ -1,6 +1,7 @@
 'use client';
 import {FC, useState} from 'react';
 import './Preview.scss';
+import ScrollIntoView from 'react-scroll-into-view';
 import {Link} from 'react-scroll';
 
 const Preview: FC = () => {
@@ -8,7 +9,7 @@ const Preview: FC = () => {
   const [isActive, setIsActive] = useState(false);
   const [isMainActive, setIsMainActive] = useState(true);
   return (
-    <div className='preview' id='preview'>
+    <div className='preview' id='home'>
       <div className='wrap'>
         <div className='preview__wrap'>
           <div className={`preview__greeting ${isShown ? 'hide' : ''}`}>
@@ -28,26 +29,31 @@ const Preview: FC = () => {
               onMouseLeave={() => setIsShown(false)}
             >
               <div className='preview__box'>
-                <Link
-                  to={'/'}
+                <a
+                  href={
+                    'https://drive.google.com/file/d/1Z3TI70r5UrqKVt2i6yUW6UQYAW3T9PeQ/view?usp=sharing'
+                  }
+                  target='_blank'
                   className={`preview__link  ${isMainActive ? 'active' : 'd'}`}
                 >
-                  Portfolio
-                </Link>
-                <Link
-                  to={'/'}
-                  className={`preview__link ${isActive ? 'active' : ''}`}
-                  onMouseEnter={() => {
-                    setIsActive(true);
-                    setIsMainActive(false);
-                  }}
-                  onMouseLeave={() => {
-                    setIsActive(false);
-                    setIsMainActive(true);
-                  }}
-                >
-                  Hire me
-                </Link>
+                  CV
+                </a>
+                <ScrollIntoView smooth={true} selector={`#contact`}>
+                  <a
+                    href={`#contact`}
+                    className={`preview__link ${isActive ? 'active' : ''}`}
+                    // onMouseEnter={() => {
+                    //   setIsActive(true);
+                    //   setIsMainActive(false);
+                    // }}
+                    // onMouseLeave={() => {
+                    //   setIsActive(false);
+                    //   setIsMainActive(true);
+                    // }}
+                  >
+                    Hire me
+                  </a>
+                </ScrollIntoView>
               </div>
             </div>
             <div className={`preview__desc ${isShown ? 'active' : ''}`}>

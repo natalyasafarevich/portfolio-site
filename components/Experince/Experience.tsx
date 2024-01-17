@@ -9,7 +9,7 @@ const Experience: FC = () => {
     threshold: 0.1,
   });
   return (
-    <div className='experience' ref={ref}>
+    <div className='experience' id='experience' ref={ref}>
       <div className='wrap'>
         <div className='experience__wrap'>
           <p className='experience__title'>

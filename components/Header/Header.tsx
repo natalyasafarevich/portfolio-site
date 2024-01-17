@@ -19,7 +19,17 @@ const Header: FC = () => {
   const handleLinkClick = (id: any) => {
     setActiveLink(id);
   };
+  let windowSize = window.innerWidth;
+  useEffect(() => {
+    console.log(window.innerWidth);
+  }, [windowSize]);
+  const handelClick = (id: any) => {
+    handleLinkClick(id);
 
+    if (windowSize <= 767) {
+      setIsOpen(!isOpen);
+    }
+  };
   return (
     <header className={`header ${isOpen ? 'open' : ''}`}>
       <div className='wrap'>
@@ -39,10 +49,7 @@ const Header: FC = () => {
                     <ScrollIntoView
                       smooth={true}
                       selector={`${id}`}
-                      onClick={() => {
-                        handleLinkClick(id);
-                        setIsOpen(!isOpen);
-                      }}
+                      onClick={handelClick}
                       className={`header__link  ${
                         activeLink === id ? 'active' : ''
                       }`}

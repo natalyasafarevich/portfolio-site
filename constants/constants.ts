@@ -5,24 +5,24 @@ type HeaderLinksProps = {
 export const HEADER_LINKS: Array<HeaderLinksProps> = [
   {
     title: 'Home',
-    id: '#preview',
+    id: '#home',
   },
   {
     title: 'About',
     id: '#about',
   },
   {
-    title: 'Service',
-    id: '#service',
+    title: 'Skills',
+    id: '#skills',
+  },
+  {
+    title: 'Experience',
+    id: '#experience',
   },
 
   {
-    title: 'Resume',
-    id: '#resume',
-  },
-  {
-    title: 'Project',
-    id: '#project',
+    title: 'Projects',
+    id: '#projects',
   },
   {
     title: 'Contact',

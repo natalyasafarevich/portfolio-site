@@ -7,7 +7,7 @@ import {useInView} from 'react-intersection-observer';
 
 const Skills: FC = () => {
   return (
-    <section className='project' id='project'>
+    <section className='project' id='skills'>
       <div className='project__wrap'>
         <div className='wrap'>
           <div className='project__info'>

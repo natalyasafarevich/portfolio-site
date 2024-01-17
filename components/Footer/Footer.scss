@@ -28,10 +28,13 @@
 
   &__button {
     cursor: pointer;
-    color: var(--white, #fff);
-    font-size: 25.692px;
-    font-weight: 500;
-    letter-spacing: -0.385px;
+    a {
+      color: var(--white, #fff);
+      font-size: 25.692px;
+      font-weight: 500;
+      letter-spacing: -0.385px;
+    }
+
     border-radius: 60px;
     display: flex;
     align-items: center;

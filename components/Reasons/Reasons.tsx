@@ -3,7 +3,7 @@ import './Reasons.scss';
 
 const Reasons: FC = () => {
   return (
-    <div className='reasons'>
+    <div className='reasons' id='about'>
       <div className='reasons__wrap'>
         <div className='wrap'>
           <p className='reasons__title'>
