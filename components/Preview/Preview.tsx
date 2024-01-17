@@ -5,7 +5,8 @@ import {Link} from 'react-scroll';
 
 const Preview: FC = () => {
   const [isShown, setIsShown] = useState(false);
-
+  const [isActive, setIsActive] = useState(false);
+  const [isMainActive, setIsMainActive] = useState(true);
   return (
     <div className='preview' id='preview'>
       <div className='wrap'>
@@ -27,10 +28,24 @@ const Preview: FC = () => {
               onMouseLeave={() => setIsShown(false)}
             >
               <div className='preview__box'>
-                <Link to={'/'} className='preview__link active'>
+                <Link
+                  to={'/'}
+                  className={`preview__link  ${isMainActive ? 'active' : 'd'}`}
+                >
                   Portfolio
                 </Link>
-                <Link to={'/'} className='preview__link'>
+                <Link
+                  to={'/'}
+                  className={`preview__link ${isActive ? 'active' : ''}`}
+                  onMouseEnter={() => {
+                    setIsActive(true);
+                    setIsMainActive(false);
+                  }}
+                  onMouseLeave={() => {
+                    setIsActive(false);
+                    setIsMainActive(true);
+                  }}
+                >
                   Hire me
                 </Link>
               </div>
