@@ -10,7 +10,7 @@ const Contact: FC = () => {
     threshold: 0.1,
   });
   return (
-    <div className='contact' ref={ref}>
+    <div className='contact' id='contact' ref={ref}>
       <div className='wrap'>
         <div className='contact__wrap'>
           <p className='contact__title'>

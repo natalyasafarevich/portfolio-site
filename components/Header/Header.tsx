@@ -7,7 +7,7 @@ import {HEADER_LINKS} from '@/constants/constants';
 const Header: FC = () => {
   const [activeLink, setActiveLink] = useState('');
   const [isOpen, setIsOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  let windowSize = window.innerWidth;
 
   useEffect(() => {
     if (isOpen) {
@@ -20,6 +20,13 @@ const Header: FC = () => {
     setActiveLink(id);
   };
 
+  const handelClick = (id: any) => {
+    handleLinkClick(id);
+
+    if (windowSize <= 767) {
+      setIsOpen(!isOpen);
+    }
+  };
   return (
     <header className={`header ${isOpen ? 'open' : ''}`}>
       <div className='wrap'>
@@ -39,10 +46,7 @@ const Header: FC = () => {
                     <ScrollIntoView
                       smooth={true}
                       selector={`${id}`}
-                      onClick={() => {
-                        handleLinkClick(id);
-                        setIsOpen(!isOpen);
-                      }}
+                      onClick={handelClick}
                       className={`header__link  ${
                         activeLink === id ? 'active' : ''
                       }`}

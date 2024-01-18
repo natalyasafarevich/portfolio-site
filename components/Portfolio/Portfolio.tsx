@@ -15,7 +15,7 @@ const Portfolio: FC = () => {
     threshold: 0.1,
   });
   return (
-    <div className='portfolio' ref={ref}>
+    <div className='portfolio' id='projects' ref={ref}>
       <div className='wrap'>
         <div className='portfolio__wrap'>
           <p className='portfolio__title'>

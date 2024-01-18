@@ -156,7 +156,7 @@
     font-weight: 600;
     letter-spacing: -0.3px;
     &.active {
-      top: -50%;
+      top: -300px;
     }
   }
 
@@ -214,7 +214,7 @@
 
   &__desc {
     &.active {
-      top: -50%;
+      top: -300px;
     }
     white-space: nowrap;
     position: relative;
@@ -249,6 +249,13 @@
     font-size: 50px;
   }
   .preview__info {
+    transition: none;
+    &:hover::after {
+      background: bottom/contain no-repeat url(/i.webp);
+    }
+    &:hover::before {
+      transform: scale(0.9);
+    }
     &::before {
       background: bottom/contain no-repeat url(/cricle.svg);
       transform: scale(1.6);

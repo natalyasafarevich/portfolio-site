@@ -7,7 +7,7 @@ import {useInView} from 'react-intersection-observer';
 
 const Skills: FC = () => {
   return (
-    <section className='project' id='project'>
+    <section className='project' id='skills'>
       <div className='project__wrap'>
         <div className='wrap'>
           <div className='project__info'>
@@ -16,8 +16,8 @@ const Skills: FC = () => {
               <span className='highlighting-color'> Skills</span>
             </p>
             <p className='project__desc'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              lacus nunc, posuere in justo vulputate, bibendum sodales
+              My approach embodies creativity, attention to detail, and every
+              project is an opportunity to bring unique ideas to life
             </p>
           </div>
           <div className='project__row'>
