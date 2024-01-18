@@ -1,3 +1,4 @@
+import {Link} from 'react-scroll';
 type HeaderLinksProps = {
   title: string;
   id: string;
@@ -71,90 +72,75 @@ export type CardPProps = {
   title: string;
   desc: string;
   src: string;
+  link: string;
 };
 
 export const PORTFOLIO_CARDS: Array<CardPProps> = [
   {
     title: `Libroverse`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
-     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    desc: `The website built using React, providing access to over 7,000 books in English with the option to register and
+    download books.`,
     src: '/tab1.svg',
+    link: 'https://your-books-ns.netlify.app/',
   },
-  // {
-  //   title: `Calathea`,
-  //   desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  //    Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit
-  //    amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
-  //   src: '/tab2.svg',
-  // },
   {
     title: `We smart`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
-     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    desc: `(*in the process*)  The website is designed for tracking and predicting traffic jams on roads using artificial intelligence`,
     src: '/tab3.svg',
+    link: 'https://wesmart.org.il/',
   },
   {
     title: `Eat Wise`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
-     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    desc: `(*in the process*) The website is designed for searching products based on nutritional value and tracking consumed calories per day.`,
     src: '/tab4.svg',
+    link: 'https://github.com/natalyasafarevich/eat-wist',
   },
 
   {
     title: `Dashboard`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
-     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    desc: `(*in the process*) Platform for tracking traffic jams and providing local settings for authorized users.`,
     src: '/tab5.svg',
+    link: 'https://65a90736e538ce6f6657e18a--cozy-sprinkles-ccdeb3.netlify.app/',
   },
 
   {
     title: `Toolkeeper app `,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
-     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    desc: `An application for inventory management of goods and materials designed for construction companies, restaurants, hotels, and any businesses dealing with tangible assets.`,
     src: '/tab7.svg',
+    link: 'https://apps.apple.com/ru/app/%D1%82%D1%83%D0%BB%D0%BA%D0%B8%D0%BF%D0%B5%D1%80-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9-%D1%83%D1%87%D0%B5%D1%82-%D1%82%D0%BC%D1%86/id1502033731',
   },
   {
     title: `Prime Pay`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
-     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    desc: `Layout implemented with Next.js. Landing page designed for a banking application.`,
     src: '/tab6.svg',
+    link: 'https://prime-pay.vercel.app/',
   },
 
   {
     title: `Toolkeeper  `,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
-     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    desc: `A website for automated accounting of goods and materials for construction companies, restaurants, hotels, and various types of businesses that deal with tangible assets.`,
     src: '/tab11.svg',
+    link: 'https://toolkeeper.io/',
   },
   {
     title: `To-do app`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
-     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    desc: `A website designed for efficient task management and organizing daily activities. It provides a simple and intuitive interface, allowing users to create, track, and complete tasks.`,
     src: '/tab9.svg',
+    link: 'https://natalya-safarevich-to-do.netlify.app/',
   },
   {
     title: `Statistic map`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
-     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
+    desc: `Game statistics map for RMAA Group, created using HTML, CSS, and JavaScript`,
     src: '/tab8.svg',
+    link: 'https://65a90890d04dd16f587a5cb7--inquisitive-kulfi-ff391e.netlify.app/',
   },
 
-  {
-    title: `Movies`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit 
-     amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.`,
-    src: '/tab10.svg',
-  },
+  // {
+  //   title: `Movies`,
+  //   desc: 'Layout design with a request for fetching movie trailers from YouTube.',
+  //   src: '/tab10.svg',
+  //   link: '',
+  // },
 ];
 
 type LabelProps = {
@@ -162,8 +148,8 @@ type LabelProps = {
 };
 export const LABELS_PORTFOLIO: Array<LabelProps> = [
   {name: 'Landing Page'},
-  {name: 'Product Design'},
+  {name: 'AI'},
   {name: 'Animation'},
-  {name: 'Glassmorphism'},
-  {name: 'Cards'},
+  {name: 'App'},
+  {name: 'Multilingual'},
 ];

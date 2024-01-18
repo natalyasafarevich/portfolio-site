@@ -21,7 +21,7 @@
   // .reasons__desc
 
   &__desc {
-    max-width: 444px;
+    max-width: 60%;
     width: 100%;
     color: #98a2b3;
     font-size: 20px;
@@ -59,9 +59,13 @@
   // .reasons__button
 
   &__button {
+    a {
+      color: #151515;
+      text-align: center;
+    }
     border-radius: 32px;
     border: 1px solid #151515;
-    color: #151515;
+
     font-size: 32px;
     font-weight: 600;
     padding: 33px 10px;
@@ -71,7 +75,9 @@
     cursor: pointer;
     &:hover {
       border: 1px solid var(--white, #fff);
-      color: var(--white, #fff);
+      a {
+        color: var(--white, #fff);
+      }
       background: #10110e;
     }
   }

@@ -40,6 +40,7 @@
   // .experience__name
 
   &__name {
+    height: 50%;
     .experience__name {
       display: none;
     }
@@ -58,7 +59,7 @@
       letter-spacing: -0.36px;
     }
     &:not(:last-of-type) {
-      margin-bottom: 100px;
+      // margin-bottom: 100px;
     }
   }
 
@@ -66,7 +67,7 @@
 
   &__icon {
     width: 50px;
-    background: center/contain no-repeat url(/expirience-icon.svg);
+    background: top/contain no-repeat url(/expirience-icon.svg);
     margin: 0 5px;
   }
 }

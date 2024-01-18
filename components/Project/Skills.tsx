@@ -16,8 +16,8 @@ const Skills: FC = () => {
               <span className='highlighting-color'> Skills</span>
             </p>
             <p className='project__desc'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              lacus nunc, posuere in justo vulputate, bibendum sodales
+              My approach embodies creativity, attention to detail, and every
+              project is an opportunity to bring unique ideas to life
             </p>
           </div>
           <div className='project__row'>

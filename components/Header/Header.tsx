@@ -7,7 +7,7 @@ import {HEADER_LINKS} from '@/constants/constants';
 const Header: FC = () => {
   const [activeLink, setActiveLink] = useState('');
   const [isOpen, setIsOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  let windowSize = window.innerWidth;
 
   useEffect(() => {
     if (isOpen) {
@@ -19,10 +19,7 @@ const Header: FC = () => {
   const handleLinkClick = (id: any) => {
     setActiveLink(id);
   };
-  let windowSize = window.innerWidth;
-  useEffect(() => {
-    console.log(window.innerWidth);
-  }, [windowSize]);
+
   const handelClick = (id: any) => {
     handleLinkClick(id);
 

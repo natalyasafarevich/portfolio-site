@@ -2,12 +2,19 @@
 import {FC, useState} from 'react';
 import './Preview.scss';
 import ScrollIntoView from 'react-scroll-into-view';
-import {Link} from 'react-scroll';
 
 const Preview: FC = () => {
   const [isShown, setIsShown] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [isMainActive, setIsMainActive] = useState(true);
+  let windowSize = window.innerWidth;
+
+  const handelMouseEnter = () => {
+    setIsShown(true);
+    if (windowSize <= 991) {
+      setIsShown(false);
+    }
+  };
   return (
     <div className='preview' id='home'>
       <div className='wrap'>
@@ -20,12 +27,11 @@ const Preview: FC = () => {
           </div>
           <div className='preview__row'>
             <p className={`preview__quote ${isShown ? 'active' : ''}`}>
-              Jennys Exceptional product design ensure our websites
-              success.Highly Recommended
+              Through hardships to the stars
             </p>
             <div
               className='preview__info'
-              onMouseEnter={() => setIsShown(true)}
+              onMouseEnter={handelMouseEnter}
               onMouseLeave={() => setIsShown(false)}
             >
               <div className='preview__box'>
@@ -34,7 +40,7 @@ const Preview: FC = () => {
                     'https://drive.google.com/file/d/1Z3TI70r5UrqKVt2i6yUW6UQYAW3T9PeQ/view?usp=sharing'
                   }
                   target='_blank'
-                  className={`preview__link  ${isMainActive ? 'active' : 'd'}`}
+                  className={`preview__link  ${isMainActive ? 'active' : ''}`}
                 >
                   CV
                 </a>
@@ -42,14 +48,14 @@ const Preview: FC = () => {
                   <a
                     href={`#contact`}
                     className={`preview__link ${isActive ? 'active' : ''}`}
-                    // onMouseEnter={() => {
-                    //   setIsActive(true);
-                    //   setIsMainActive(false);
-                    // }}
-                    // onMouseLeave={() => {
-                    //   setIsActive(false);
-                    //   setIsMainActive(true);
-                    // }}
+                    onMouseEnter={() => {
+                      setIsActive(true);
+                      setIsMainActive(false);
+                    }}
+                    onMouseLeave={() => {
+                      setIsActive(false);
+                      setIsMainActive(true);
+                    }}
                   >
                     Hire me
                   </a>

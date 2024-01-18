@@ -1,8 +1,9 @@
 import {FC, useEffect, useState} from 'react';
 import './PortfolioCard.scss';
 import {CardPProps} from '@/constants/constants';
-import {Link} from 'react-scroll';
+
 import {useInView} from 'react-intersection-observer';
+import Link from 'next/link';
 
 type PortfolioCardProps = {
   card: CardPProps;
@@ -11,13 +12,10 @@ type PortfolioCardProps = {
 const PortfolioCard: FC<PortfolioCardProps> = ({card}) => {
   const [isShown, setIsShown] = useState(false);
 
-  useEffect(() => {
-    console.log(isShown);
-  }, [isShown]);
-
   return (
     <Link
-      to='/пквпк'
+      target='_blank'
+      href={card.link}
       className={`portfolio-card ${isShown ? 'show' : ''}`}
       onMouseEnter={() => {
         setIsShown(true);

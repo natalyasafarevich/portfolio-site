@@ -27,23 +27,23 @@ const Footer: FC = () => {
           <div className='footer__row'>
             <div className='footer__info'>
               <p className='footer__desc'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Sed lobortis orci elementum egestas
-                lobortis.
+                Welcome to my portfolio website! Glad to see you here.
               </p>
               <div className='footer__box'>
                 <a
                   href='https://t.me/mentis_astra'
+                  target='_blank'
                   className='footer__icon footer__icon_tg'
                 ></a>
                 <a
                   href='https://www.linkedin.com/in/natalya-safarevich/'
                   className='footer__icon footer__icon_ln'
+                  target='_blank'
                 ></a>{' '}
                 <a
                   href='https://github.com/natalyasafarevich'
                   className='footer__icon footer__icon_git'
+                  target='_blank'
                 ></a>
               </div>
             </div>
@@ -82,8 +82,11 @@ const Footer: FC = () => {
               >
                 natalliasafarevich@gmail.c
               </a>
-              <a className='footer__item' href='Portfolio-jcrea.com'>
-                Portfolio-jcrea.com
+              <a
+                className='footer__item'
+                href='https://website-oxfz.vercel.app/'
+              >
+                my-portfolio.com
               </a>
             </div>
           </div>
