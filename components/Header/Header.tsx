@@ -7,7 +7,7 @@ import {HEADER_LINKS} from '@/constants/constants';
 const Header: FC = () => {
   const [activeLink, setActiveLink] = useState('');
   const [isOpen, setIsOpen] = useState(false);
-  let windowSize = window.innerWidth;
+  let windowSize = typeof window !== 'undefined' ? window.innerWidth : 0;
 
   useEffect(() => {
     if (isOpen) {
