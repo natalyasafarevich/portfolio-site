@@ -7,7 +7,7 @@ const Preview: FC = () => {
   const [isShown, setIsShown] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [isMainActive, setIsMainActive] = useState(true);
-  let windowSize = window.innerWidth;
+  let windowSize = typeof window !== 'undefined' ? window.innerWidth : 0;
 
   const handelMouseEnter = () => {
     setIsShown(true);
