@@ -84,17 +84,24 @@ export const PORTFOLIO_CARDS: Array<CardPProps> = [
     link: 'https://your-books-ns.netlify.app/',
   },
   {
+    title: `Caravan`,
+    desc: `Trailer booking site`,
+    src: '/taaabs.png',
+    link: 'https://www.dreamcaravans.co.il',
+  },
+  {
     title: `We smart`,
-    desc: `(*in the process*)  The website is designed for tracking and predicting traffic jams on roads using artificial intelligence`,
+    desc: ` The website is designed for tracking and predicting traffic jams on roads using artificial intelligence`,
     src: '/tab3.svg',
     link: 'https://wesmart.org.il/',
   },
-  {
-    title: `Eat Wise`,
-    desc: `(*in the process*) The website is designed for searching products based on nutritional value and tracking consumed calories per day.`,
-    src: '/tab4.svg',
-    link: 'https://github.com/natalyasafarevich/eat-wist',
-  },
+
+  // {
+  //   title: `Eat Wise`,
+  //   desc: `(*in the process*) The website is designed for searching products based on nutritional value and tracking consumed calories per day.`,
+  //   src: '/tab4.svg',
+  //   link: 'https://github.com/natalyasafarevich/eat-wist',
+  // },
 
   {
     title: `Dashboard`,
